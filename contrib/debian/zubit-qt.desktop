@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Zubit
+Comment=Zubit P2P Cryptocurrency
+Comment[fr]=Zubit, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Zubit, eşten eşe kriptografik sanal para birimi
+Exec=zubit-qt %u
+Terminal=false
+Type=Application
+Icon=zubit128
+MimeType=x-scheme-handler/zubit;
+Categories=Office;Finance;

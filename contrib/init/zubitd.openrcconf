@@ -1,0 +1,26 @@
+# /etc/conf.d/zubitd: config file for /etc/init.d/zubitd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/zubit/zubit.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/zubitd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/zubitd.pid"
+
+# Where to write zubitd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/zubitd"
+
+# User and group to own zubitd process
+#BITCOIND_USER="zubit"
+#BITCOIND_GROUP="zubit"
+
+# Path to zubitd executable
+#BITCOIND_BIN="/usr/bin/zubitd"
+
+# Nice value to run zubitd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

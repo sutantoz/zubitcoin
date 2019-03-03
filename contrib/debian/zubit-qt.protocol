@@ -1,0 +1,11 @@
+[Protocol]
+exec=zubit-qt '%u'
+protocol=zubit
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

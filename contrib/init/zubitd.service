@@ -1,0 +1,26 @@
+[Unit]
+Description=Zubit's distributed currency daemon
+After=network.target
+
+[Service]
+User=zubit
+Group=zubit
+
+Type=forking
+PIDFile=/var/lib/zubitd/zubitd.pid
+
+ExecStart=/usr/bin/zubitd -daemon -pid=/var/lib/zubitd/zubitd.pid \
+          -conf=/etc/zubit/zubit.conf -datadir=/var/lib/zubitd
+
+ExecStop=-/usr/bin/zubit-cli -conf=/etc/zubit/zubit.conf \
+         -datadir=/var/lib/zubitd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
